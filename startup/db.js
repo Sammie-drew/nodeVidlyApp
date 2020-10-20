@@ -5,7 +5,7 @@ module.exports = function (params) {
   const db =
     "mongodb+srv://admin:GKViPnBuUxlQ1Teh@cluster0.otgsx.mongodb.net/vidlydb?retryWrites=true&w=majority";
   mongoose
-    .connect(config.get("db"), {
+    .connect(db, {
       useUnifiedTopology: true,
       useNewUrlParser: true,
       useFindAndModify: false,
